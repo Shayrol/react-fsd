@@ -1,0 +1,1 @@
+독립적이 UI 블록 (Navbar, Footer 등)
