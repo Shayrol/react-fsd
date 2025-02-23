@@ -19,6 +19,9 @@ export default function Layout() {
             height: "100vh",
             margin: "0 auto",
             backgroundColor: "lightsalmon",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <Outlet />

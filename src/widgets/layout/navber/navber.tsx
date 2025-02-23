@@ -78,6 +78,20 @@ export default function Navbar() {
             TestB
           </Link>
         </li>
+        <li>
+          <Link
+            to="/boards"
+            style={LiStyle}
+            onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
+              e.currentTarget.style.backgroundColor = "#555";
+            }}
+            onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
+              e.currentTarget.style.backgroundColor = "transparent";
+            }}
+          >
+            Boards
+          </Link>
+        </li>
       </ul>
     </nav>
   );

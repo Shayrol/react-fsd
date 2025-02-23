@@ -3,6 +3,7 @@ import Layout from "./widgets/layout";
 import TestAPage from "./pages/testA/index";
 import TestBPage from "./pages/testB/index";
 import RootPage from "./features/HomPage";
+import BoardsPage from "./pages/boards";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
       { index: true, element: <RootPage /> },
       { path: "testA", element: <TestAPage /> },
       { path: "testB", element: <TestBPage /> },
+      { path: "boards", element: <BoardsPage /> },
     ],
   },
 ]);
