@@ -16,3 +16,11 @@ react router의 Link:
 - Next.js에서도 기본으로 Link를 지원을 하는데 같은 기능을 하고 있지만 추가 기능을 제공한다.
   - CSR 외에도 SSR, SSG을 지원하며 프리페칭으로 미리 로드하며 위의 Link와 똑같이 전체 페이지
     리로드 없이 컴포넌트를 교체한다. 
+
+
+TypeScript 설치:
+  yarn add @types/react @types/react-dom
+  yarn add typescript
+
+TypeScript tsconfig 생성:
+  npm에 들어가 @tsconfig/create-react-app 검색 후 해당 tsconfig 파일 생성

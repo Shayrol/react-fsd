@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./widgets";
+import Layout from "./widgets/layout";
 import TestAPage from "./pages/testA/index";
 import TestBPage from "./pages/testB/index";
 import RootPage from "./features/HomPage";

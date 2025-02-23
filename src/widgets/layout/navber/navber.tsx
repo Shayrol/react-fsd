@@ -39,10 +39,13 @@ export default function Navbar() {
           <Link
             to="/"
             style={LiStyle}
-            onMouseEnter={(e) => (e.target.style.backgroundColor = "#555")}
-            onMouseLeave={(e) =>
-              (e.target.style.backgroundColor = "transparent")
-            }
+            onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
+              // e.target.style.backgroundColor = "#555";
+              e.currentTarget.style.backgroundColor = "#555";
+            }}
+            onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
+              e.currentTarget.style.backgroundColor = "transparent";
+            }}
           >
             Home
           </Link>
@@ -51,10 +54,12 @@ export default function Navbar() {
           <Link
             to="/testA"
             style={LiStyle}
-            onMouseEnter={(e) => (e.target.style.backgroundColor = "#555")}
-            onMouseLeave={(e) =>
-              (e.target.style.backgroundColor = "transparent")
-            }
+            onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
+              e.currentTarget.style.backgroundColor = "#555";
+            }}
+            onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
+              e.currentTarget.style.backgroundColor = "transparent";
+            }}
           >
             TestA
           </Link>
@@ -63,10 +68,12 @@ export default function Navbar() {
           <Link
             to="/testB"
             style={LiStyle}
-            onMouseEnter={(e) => (e.target.style.backgroundColor = "#555")}
-            onMouseLeave={(e) =>
-              (e.target.style.backgroundColor = "transparent")
-            }
+            onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
+              e.currentTarget.style.backgroundColor = "#555";
+            }}
+            onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
+              e.currentTarget.style.backgroundColor = "transparent";
+            }}
           >
             TestB
           </Link>
