@@ -1,12 +1,12 @@
 
-React 설치:
+🎈React 설치:
   yarn create react-app my-app
 
-React router 설치:
+🎈React router 설치:
   yarn add react-router-dom
 
 
-react router의 Link:
+🎈react router의 Link:
   - Link를 통해 페이지 이동으로 주소가 변경이 되면서 컴포넌트만 교체한다.
   - 이는 페이지 새로고침 없이 주소 이동을 하면서 해당 주소 컴포넌트를 불러온다.
   - 즉 CSR으로 동작을 하며 주소이동으로 전체 페이지가 리로드 하지 않고 해당 컴포넌트만
@@ -18,9 +18,27 @@ react router의 Link:
     리로드 없이 컴포넌트를 교체한다. 
 
 
-TypeScript 설치:
+🎈TypeScript 설치:
   yarn add @types/react @types/react-dom
   yarn add typescript
 
-TypeScript tsconfig 생성:
-  npm에 들어가 @tsconfig/create-react-app 검색 후 해당 tsconfig 파일 생성
+  TypeScript tsconfig 생성:
+    npm에 들어가 @tsconfig/create-react-app 검색 후 해당 tsconfig 파일 생성
+
+
+🎈eslint 설치:
+  yarn create @eslint/config
+
+  eslint rule 설정:
+    eslint.config.mjs에서 rule 추가
+
+
+🎈prettier 설치:
+  yarn add --dev --exact prettier
+
+  prettier 설정:
+    최상단 폴더(해당 프로젝트 폴더 밖)에 .vscode/settings.json 생성
+    {
+      "editor.formatOnSave": true, // 저장시 자동으로 포멧됨
+      "editor.defaultFormatter": "esbenp.prettier-vscode" // 기본적으로 prettier를 사용
+    }

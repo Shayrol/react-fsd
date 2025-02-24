@@ -1,4 +1,12 @@
+import React from "react";
 import { gql, useQuery } from "@apollo/client";
+
+interface IBoardsTest {
+  _id: string;
+  writer: string;
+  title: string;
+  contents: string;
+}
 
 // boards에 사용한 useQueryFetchBoards()는 contents가 없어 여기서의 API 요청은
 // contents를 포함해 다시 api 요청을 한다.
@@ -25,8 +33,8 @@ export default function TestA() {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <p>API 요청 캐싱 확인(ID)</p>
-      {data?.fetchBoards.map((el: any) => (
-        <div>
+      {data?.fetchBoards.map((el: IBoardsTest) => (
+        <div key={el._id}>
           <div>{el._id.slice(-4)}</div>
         </div>
       ))}

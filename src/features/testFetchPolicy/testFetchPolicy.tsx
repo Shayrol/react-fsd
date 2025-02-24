@@ -1,7 +1,14 @@
 "use client";
 
+import React from "react";
 import { useQueryFetchBoards } from "../../entities/boards/useQueryBoards";
 import { CSSProperties } from "react";
+
+interface IBoards {
+  _id: string;
+  writer: string;
+  title: string;
+}
 
 // 전체 컨테이너 스타일
 const Wrap: CSSProperties = {
@@ -62,7 +69,7 @@ export default function TestFetchPolicy() {
         <div style={Column}>WRITER</div>
       </div>
       {/* 게시물 목록 */}
-      {data?.fetchBoards.map((el: any) => (
+      {data?.fetchBoards.map((el: IBoards) => (
         <div
           key={el._id}
           style={{

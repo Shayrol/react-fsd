@@ -1,8 +1,9 @@
+import React from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "./footer/footer";
 import Navbar from "./navber/navber";
 
-export default function Layout() {
+export default function Layout(): JSX.Element {
   return (
     <div
       style={{
